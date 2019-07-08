@@ -1,0 +1,25 @@
+{
+    "cmd":"010305010203040506",    
+    "cfg":{
+        "name":"testcmd",
+        "id":"00001",
+        "params":[
+            {
+                "tag":"cmd",
+                "len":2,
+                "type":"hex"
+            },
+            {
+                "tag":"len",
+                "len":1,
+                "type":"int"
+            },
+            {
+                "tag":"value",
+                 "baselen":"len",
+                "type":"int-big",
+                "operate":"*0.1"
+            }
+            ]
+    }
+}
